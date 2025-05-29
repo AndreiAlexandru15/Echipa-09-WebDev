@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoExpert - Service Auto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <!-- Uikit CSS -->
+  <link rel="stylesheet" href="css/uikit.css">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="uk-background-muted uk-base">
+  <!-- Navbar Sticky + Offcanvas (Navbar, Off-canvas, Container, Icon, Utility, Visibility) -->
+  <header>
+    <nav class="uk-navbar-container uk-navbar-sticky" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="index.html">
+          <img src="assets/logo.svg" alt="AutoExpert Logo" width="40">
+          <span class="uk-visible@m uk-margin-small-left">AutoExpert</span>
+        </a>
+        <ul class="uk-navbar-nav uk-visible@m">
+          <li class="uk-active"><a href="index.html">Acasă</a></li>
+          <li><a href="about.html">Despre</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
+      </div>
+    </nav>
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+          <li class="uk-active"><a href="index.html">Acasă</a></li>
+          <li><a href="about.html">Despre</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Alert (Alert, Margin, Animation) -->
+  <div class="uk-container uk-margin">
+    <div class="uk-alert-primary uk-animation-slide-top-small" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p><span uk-icon="icon: info"></span> Programare rapidă online sau telefonic!</p>
+    </div>
+  </div>
+
+  <!-- Hero Section (Section, Background, Flex, Heading, Text, Position, Animation) -->
+  <section class="uk-section uk-section-large uk-flex uk-flex-middle uk-background-cover uk-light" style="background-image: url('assets/images/hero.jpg'); min-height: 60vh;">
+    <div class="uk-container">
+      <h1 class="uk-heading-hero uk-text-center uk-text-bold uk-text-white" uk-scrollspy="cls:uk-animation-slide-top">Service auto de încredere</h1>
+      <p class="uk-text-lead uk-text-center uk-text-white" uk-scrollspy="cls:uk-animation-fade; delay: 300">Reparații rapide, profesionale și transparente</p>
+    </div>
+  </section>
+
+  <!-- Divider (Divider) -->
+  <hr class="uk-divider-icon">
+
+  <!-- Prezentare rapidă (Article, Base, Text, Margin, Padding) -->
+  <section class="uk-section uk-section-default">
+    <div class="uk-container">
+      <article class="uk-article uk-padding-small uk-margin">
+        <h2 class="uk-article-title uk-heading-line"><span>De ce să alegi AutoExpert?</span></h2>
+        <p class="uk-text-lead">Suntem partenerul tău de încredere pentru orice problemă auto. Oferim transparență, rapiditate și garanție la toate lucrările.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Servicii Grid + Carduri (Grid, Card, Icon, Animation, Align, Width, Flex, Margin) -->
+  <!-- Alert -->
+  <div class="uk-container uk-margin">
+    <div class="uk-alert-primary" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p>Programare rapidă online sau telefonic!</p>
+    </div>
+  </div>
+
+  <!-- Servicii Grid + Carduri -->
+  <section class="uk-section">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Serviciile Noastre</span></h2>
+      <div class="uk-grid-match uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-animation-toggle">
+            <span uk-icon="icon: settings; ratio: 2" class="uk-align-center"></span>
+            <h3 class="uk-card-title uk-text-center">Diagnoză Computerizată</h3>
+            <p class="uk-text-center">Identificare rapidă a problemelor electronice și mecanice.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-primary uk-card-body uk-animation-toggle">
+            <span uk-icon="icon: wrench; ratio: 2" class="uk-align-center"></span>
+            <h3 class="uk-card-title uk-text-center">Reparații Mecanice</h3>
+            <p class="uk-text-center">Reparații motor, transmisie, frâne, suspensie și multe altele.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-secondary uk-card-body uk-animation-toggle">
+            <span uk-icon="icon: bolt; ratio: 2" class="uk-align-center"></span>
+            <h3 class="uk-card-title uk-text-center">Electrică Auto</h3>
+            <p class="uk-text-center">Remediere instalații electrice, baterii, alternatoare, senzori.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slideshow -->
+  <section class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Galerie Service</span></h2>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; min-height: 300; max-height: 400;">
+        <ul class="uk-slideshow-items">
+          <li>
+            <img src="assets/images/hero.jpg" alt="Service auto" uk-cover>
+          </li>
+          <li>
+            <img src="assets/images/slide2.jpg" alt="Diagnoză" uk-cover>
+          </li>
+          <li>
+            <img src="assets/images/slide3.jpeg" alt="Reparații" uk-cover>
+          </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buton și ToTop -->
+  <div class="uk-container uk-text-center uk-margin">
+    <a class="uk-button uk-button-primary uk-button-large" href="contact.html">Programează-te acum</a>
+  </div>
+  <a href="#" uk-totop uk-scroll></a>
+
+  <!-- Footer -->
+  <footer class="uk-section uk-section-secondary uk-light uk-text-center">
+    <div class="uk-container">
+      <p>&copy; 2025 AutoExpert Service. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <!-- Uikit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html> 

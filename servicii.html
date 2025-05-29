@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicii - AutoExpert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/uikit.css">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="uk-background-default uk-base">
+  <!-- Navbar Sticky + Offcanvas -->
+  <header>
+    <nav class="uk-navbar-container uk-navbar-sticky" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="index.html">
+          <img src="assets/logo.svg" alt="AutoExpert Logo" width="40">
+          <span class="uk-visible@m uk-margin-small-left">AutoExpert</span>
+        </a>
+        <ul class="uk-navbar-nav uk-visible@m">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="about.html">Despre</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
+      </div>
+    </nav>
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="about.html">Despre</a></li>
+          <li class="uk-active"><a href="servicii.html">Servicii</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Alertă promoțională -->
+  <div class="uk-container uk-margin">
+    <div class="uk-alert-success uk-animation-slide-top-small" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p><span uk-icon="icon: star"></span> Pachet promo: Revizie completă + Diagnoză la doar 299 lei!</p>
+    </div>
+  </div>
+
+  <!-- Secțiune servicii detaliate (Section, Container, Grid, Card, Icon, Animation, Heading, Text, Flex, Margin, Padding, Width, Align) -->
+  <section class="uk-section uk-section-default">
+    <div class="uk-container">
+      <h1 class="uk-heading-line uk-text-center"><span>Serviciile noastre</span></h1>
+      <div class="uk-grid-match uk-child-width-1-4@m uk-child-width-1-2@s uk-flex-center" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-animation-toggle uk-width-expand uk-text-center">
+            <span uk-icon="icon: settings; ratio: 2" class="uk-align-center"></span>
+            <h3 class="uk-card-title">Diagnoză Computerizată</h3>
+            <p>Testare completă cu aparatură modernă pentru orice marcă auto.</p>
+            <a class="uk-button uk-button-text" href="#galerie">Vezi galerie</a>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-primary uk-card-body uk-animation-toggle uk-width-expand uk-text-center">
+            <span uk-icon="icon: wrench; ratio: 2" class="uk-align-center"></span>
+            <h3 class="uk-card-title">Reparații Mecanice</h3>
+            <p>Motor, transmisie, frâne, suspensie, direcție, ambreiaj, distribuție.</p>
+            <a class="uk-button uk-button-text" href="#pachete">Află mai mult</a>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-secondary uk-card-body uk-animation-toggle uk-width-expand uk-text-center">
+            <span uk-icon="icon: bolt; ratio: 2" class="uk-align-center"></span>
+            <h3 class="uk-card-title">Electrică & Electronică</h3>
+            <p>Diagnoză, reparații instalații, baterii, alternatoare, senzori, climatizare.</p>
+            <a class="uk-button uk-button-text" href="#compara">Compară pachete</a>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-animation-toggle uk-width-expand uk-text-center">
+            <span uk-icon="icon: check; ratio: 2" class="uk-align-center"></span>
+            <h3 class="uk-card-title">ITP & Revizii</h3>
+            <p>Inspecții tehnice periodice, revizii, verificări, schimburi consumabile.</p>
+            <a class="uk-button uk-button-text" href="#itp">Detalii ITP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="uk-divider-icon">
+
+  <!-- Pachete de servicii (Grid, Card, Flex, Heading, Button, Margin, Padding, Width, Position, Animation, Inverse, Background) -->
+  <section id="pachete" class="uk-section uk-section-secondary uk-light uk-padding-small">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Pachete recomandate</span></h2>
+      <div class="uk-grid-match uk-child-width-1-3@m uk-child-width-1-1@s uk-flex-center" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center uk-animation-slide-left-small uk-width-expand">
+            <h3 class="uk-card-title">Basic</h3>
+            <ul class="uk-list uk-list-bullet uk-text-left uk-margin-small-bottom">
+              <li>Diagnoză rapidă</li>
+              <li>Schimb ulei și filtru</li>
+              <li>Verificare frâne</li>
+            </ul>
+            <div class="uk-text-large uk-text-bold uk-margin-small">199 lei</div>
+            <a class="uk-button uk-button-primary uk-width-1-1" href="contact.html">Programează</a>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-primary uk-card-body uk-text-center uk-animation-fade uk-width-expand">
+            <h3 class="uk-card-title">Standard</h3>
+            <ul class="uk-list uk-list-bullet uk-text-left uk-margin-small-bottom">
+              <li>Tot din Basic</li>
+              <li>Diagnoză computerizată completă</li>
+              <li>Verificare suspensie și direcție</li>
+            </ul>
+            <div class="uk-text-large uk-text-bold uk-margin-small">299 lei</div>
+            <a class="uk-button uk-button-secondary uk-width-1-1" href="contact.html">Programează</a>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-secondary uk-card-body uk-text-center uk-animation-slide-right-small uk-width-expand">
+            <h3 class="uk-card-title">Premium</h3>
+            <ul class="uk-list uk-list-bullet uk-text-left uk-margin-small-bottom">
+              <li>Tot din Standard</li>
+              <li>Curățare sistem frânare</li>
+              <li>Test baterie și alternator</li>
+              <li>Diagnoză electronică avansată</li>
+            </ul>
+            <div class="uk-text-large uk-text-bold uk-margin-small">399 lei</div>
+            <a class="uk-button uk-button-default uk-width-1-1" href="contact.html">Programează</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="uk-divider-small">
+
+  <!-- Tabel comparație pachete (Table, Container, Section, Heading, Width, Margin, Text, Utility, Animation, Visibility) -->
+  <section id="compara" class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Comparație pachete</span></h2>
+      <div class="uk-overflow-auto uk-width-1-1 uk-margin-auto">
+        <table class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-width-auto uk-text-center uk-animation-fade">
+          <thead>
+            <tr>
+              <th>Pachet</th>
+              <th>Diagnoză</th>
+              <th>Schimb ulei</th>
+              <th>Verificare frâne</th>
+              <th>Suspensie/direcție</th>
+              <th>Test baterie</th>
+              <th>Preț</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Basic</td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td>-</td><td>-</td><td>199 lei</td></tr>
+            <tr><td>Standard</td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td>-</td><td>299 lei</td></tr>
+            <tr><td>Premium</td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td><span uk-icon="icon: check"></span></td><td>399 lei</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <hr class="uk-divider-icon">
+
+  <!-- Galerie Lightbox (Lightbox, Grid, Card, Icon, Animation, Position, Width, Margin, Padding, Text, Utility, Align) -->
+  <section id="galerie" class="uk-section uk-section-default">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Galerie lucrări</span></h2>
+      <div class="uk-child-width-1-4@m uk-grid-small" uk-grid uk-lightbox="animation: slide">
+        <div>
+          <a class="uk-inline" href="assets/images/hero.jpg" data-caption="Diagnoză computerizată">
+            <img src="assets/images/hero.jpg" alt="Diagnoză computerizată">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="assets/images/slide2.jpg" data-caption="Reparații mecanice">
+            <img src="assets/images/slide2.jpg" alt="Reparații mecanice">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="assets/images/slide3.jpeg" data-caption="Electrică auto">
+            <img src="assets/images/slide3.jpeg" alt="Electrică auto">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="assets/images/team1.jpg" data-caption="ITP & Revizii">
+            <img src="assets/images/team1.jpg" alt="ITP & Revizii">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="uk-divider-small">
+
+  <!-- Testimoniale (Grid, Card, Flex, Margin, Padding, Text, Animation, Align, Width, Inverse, Background) -->
+  <section class="uk-section uk-section-secondary uk-light uk-padding-small">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Testimoniale clienți</span></h2>
+      <div class="uk-grid-match uk-child-width-1-3@m uk-child-width-1-1@s uk-flex-center" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center uk-animation-fade uk-width-expand">
+            <span uk-icon="icon: user; ratio: 1.5" class="uk-align-center"></span>
+            <blockquote>"Foarte mulțumit de rapiditate și preț!"<br><span class="uk-text-meta">- Vlad, București</span></blockquote>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-primary uk-card-body uk-text-center uk-animation-fade uk-width-expand">
+            <span uk-icon="icon: users; ratio: 1.5" class="uk-align-center"></span>
+            <blockquote>"Recomand pachetul Premium!"<br><span class="uk-text-meta">- Ana, Ilfov</span></blockquote>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-secondary uk-card-body uk-text-center uk-animation-fade uk-width-expand">
+            <span uk-icon="icon: happy; ratio: 1.5" class="uk-align-center"></span>
+            <blockquote>"Diagnoză rapidă și explicații clare."<br><span class="uk-text-meta">- George, București</span></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action (Button, Position, Utility, Margin, Padding, Animation, Flex, Align) -->
+  <div class="uk-container uk-text-center uk-margin-large">
+    <a class="uk-button uk-button-primary uk-button-large uk-animation-slide-bottom-small" href="contact.html">
+      <span uk-icon="icon: receiver"></span> Programează-te acum
+    </a>
+  </div>
+  <a href="#" uk-totop uk-scroll class="uk-position-fixed uk-position-bottom-right uk-margin-small-right uk-margin-small-bottom"></a>
+
+  <footer class="uk-section uk-section-secondary uk-light uk-text-center uk-padding-small">
+    <div class="uk-container uk-flex uk-flex-center uk-flex-middle">
+      <p class="uk-margin-remove">&copy; 2025 AutoExpert Service. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Despre - AutoExpert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/uikit.css">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body>
+  <!-- Navbar Sticky + Offcanvas -->
+  <header>
+    <nav class="uk-navbar-container uk-navbar-sticky" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="index.html">
+          <img src="assets/logo.svg" alt="AutoExpert Logo" width="40">
+          <span class="uk-visible@m uk-margin-small-left">AutoExpert</span>
+        </a>
+        <ul class="uk-navbar-nav uk-visible@m">
+          <li><a href="index.html">Acasă</a></li>
+          <li class="uk-active"><a href="about.html">Despre</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
+      </div>
+    </nav>
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+          <li><a href="index.html">Acasă</a></li>
+          <li class="uk-active"><a href="about.html">Despre</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Articol Despre Service -->
+  <section class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <article class="uk-article">
+        <h1 class="uk-article-title">Despre AutoExpert</h1>
+        <p class="uk-article-meta">Service auto fondat în 2010 &bull; Peste 10.000 de clienți mulțumiți</p>
+        <p>AutoExpert este un service auto modern, dotat cu echipamente de ultimă generație și o echipă de profesioniști dedicați. Oferim servicii complete de întreținere și reparații pentru orice marcă și model de autoturism.</p>
+        <ul class="uk-list uk-list-bullet">
+          <li>Diagnoză computerizată</li>
+          <li>Reparații mecanice și electrice</li>
+          <li>Revizii periodice</li>
+          <li>ITP și verificări tehnice</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <hr class="uk-divider-icon">
+
+  <!-- Echipa noastră -->
+  <section class="uk-section">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Echipa noastră</span></h2>
+      <div class="uk-grid-match uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <img src="assets/images/team1.jpg" class="uk-border-circle" width="100" alt="Mecanic 1">
+            <h3 class="uk-card-title">Ion Popescu</h3>
+            <p>Mecanic șef</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-primary uk-card-body uk-text-center">
+            <img src="assets/images/team2.jpg" class="uk-border-circle" width="100" alt="Mecanic 2">
+            <h3 class="uk-card-title">Maria Ionescu</h3>
+            <p>Electrician auto</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-secondary uk-card-body uk-text-center">
+            <img src="assets/images/team3.jpg" class="uk-border-circle" width="100" alt="Mecanic 3">
+            <h3 class="uk-card-title">Vasile Georgescu</h3>
+            <p>Consilier service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie Lightbox -->
+  <section class="uk-section uk-section-default">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Galerie foto</span></h2>
+      <div class="uk-child-width-1-4@m uk-grid-small" uk-grid uk-lightbox="animation: slide">
+        <div>
+          <a class="uk-inline" href="assets/images/hero.jpg" data-caption="Service auto modern">
+            <img src="assets/images/hero.jpg" alt="Service auto modern">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="assets/images/slide2.jpg" data-caption="Diagnoză computerizată">
+            <img src="assets/images/slide2.jpg" alt="Diagnoză computerizată">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="assets/images/slide3.jpeg" data-caption="Reparații mecanice">
+            <img src="assets/images/slide3.jpeg" alt="Reparații mecanice">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="assets/images/team1.jpg" data-caption="Echipa noastră">
+            <img src="assets/images/team1.jpg" alt="Echipa noastră">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabel Tarife -->
+  <section class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <h2 class="uk-heading-line uk-text-center"><span>Tarife orientative</span></h2>
+      <div class="uk-overflow-auto">
+        <table class="uk-table uk-table-divider uk-table-striped uk-table-hover">
+          <thead>
+            <tr>
+              <th>Serviciu</th>
+              <th>Preț (lei)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Diagnoză computerizată</td><td>100</td></tr>
+            <tr><td>Schimb ulei și filtru</td><td>150</td></tr>
+            <tr><td>Reparații frâne</td><td>200</td></tr>
+            <tr><td>ITP</td><td>180</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="uk-section uk-section-secondary uk-light uk-text-center">
+    <div class="uk-container">
+      <p>&copy; 2025 AutoExpert Service. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html> 
