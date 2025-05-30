@@ -222,5 +222,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html> 
